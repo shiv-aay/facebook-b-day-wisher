@@ -32,3 +32,4 @@ Just run the script using python in powershell or in terminal like:
 ```
 python3 facebook_automatic_birthday_wish.py
 ```
+Enter login credentials, password(unechoed)
