@@ -68,10 +68,22 @@ def start(username , password , send_now):
     input("Close the session?")
 
 # taking inputs
-username = input("Enter your facebook email/phone number : ")
-send_now = input("Do you want to post wishes instantaneously ? ")
-password = getpass()
-# start the process
-start(username = username , password = password , send_now = send_now)
+if os.path.exists("credentials.txt"):
+    lines = []
+    with open('credentials.txt') as f:
+        lines = f.readlines()  
+    username = lines[0]
+    send_now = lines[1]
+    password = lines[2]
+    start(username = username , password = password , send_now = send_now)
+else:
+    username = input("Enter your facebook email/phone number : ")
+    send_now = input("Do you want to post wishes instantaneously ? ")
+    password = getpass()
+    file = open("credentials.txt","a")
+    file.writelines(L) for L = [username, send_now, password]
+    file.close()
+    # start the process
+    start(username = username , password = password , send_now = send_now)
 
 ## For any queries or feedback, feel free to contact me here shivoy4ndixit@gmail.com
