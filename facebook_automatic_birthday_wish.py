@@ -58,7 +58,7 @@ def start(username , password , send_now):
                 print("Exception occured for 1 friend")
     except Exception as e:        
             print(str(e))
-    input()
+    input("Close the session?")
 
 # taking inputs
 username = input("Enter your facebook email/phone number : ")
