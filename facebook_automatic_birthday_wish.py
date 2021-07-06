@@ -72,7 +72,6 @@ if os.path.exists("credentials.txt"):
     lines = []
     with open('credentials.txt') as f:
         lines = f.readlines()
-    print(lines)
     username = lines[0].rstrip()
     send_now = lines[1].rstrip()
     password = lines[2].rstrip()
