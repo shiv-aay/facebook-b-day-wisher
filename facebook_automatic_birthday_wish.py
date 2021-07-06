@@ -71,17 +71,20 @@ def start(username , password , send_now):
 if os.path.exists("credentials.txt"):
     lines = []
     with open('credentials.txt') as f:
-        lines = f.readlines()  
-    username = lines[0]
-    send_now = lines[1]
-    password = lines[2]
+        lines = f.readlines()
+    print(lines)
+    username = lines[0].rstrip()
+    send_now = lines[1].rstrip()
+    password = lines[2].rstrip()
     start(username = username , password = password , send_now = send_now)
 else:
     username = input("Enter your facebook email/phone number : ")
     send_now = input("Do you want to post wishes instantaneously ? ")
     password = getpass()
     file = open("credentials.txt","a")
-    file.writelines(L) for L = [username, send_now, password]
+    lines = [username, send_now, password]
+    for line in lines:
+        file.write(line + "\n")
     file.close()
     # start the process
     start(username = username , password = password , send_now = send_now)
