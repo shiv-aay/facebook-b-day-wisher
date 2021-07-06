@@ -6,6 +6,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from getpass import getpass
 from time import sleep
+import os
 
 # Install your browser's driver and put its path in the following line.
 driver_address = r"C:\Users\pc\Desktop\chromedriver.exe"
@@ -17,7 +18,10 @@ def start(username , password , send_now):
     # following parameter disables browser notifications
     chrome_options = Options()
     chrome_options.add_argument("--disable-notifications")
-    driver=webdriver.Chrome(driver_address , options=chrome_options) # put the path of your driver in the double quotes
+    # Use following line if you have already have chromedriver and linked it at the top
+    # driver=webdriver.Chrome(driver_address , options=chrome_options) # put the path of your driver in the double quotes
+    driver = webdriver.Chrome(os.getcwd()+r"\chromedriver.exe")
+
     driver.get('https://facebook.com/')
     driver.maximize_window()
 
