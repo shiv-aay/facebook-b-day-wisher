@@ -3,6 +3,16 @@ This is a simple python script which automatically sends personalized birthday w
 
 NOTE : This script is originally built for Chrome browser on windows OS. With slight modifications, it can be easily used on different browsers or OS.
 
+This script can be directly installed with a single command
+```
+pip install fbwisher
+```
+Run the script by typing `fbwisher` in the terminal.
+
+Cheers!
+
+**Alternatively**
+
 Clone this repo using 
 ```
 git clone https://github.com/shiv-aay/facebook-b-day-wisher

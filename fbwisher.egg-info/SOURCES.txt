@@ -1,0 +1,9 @@
+README.md
+setup.py
+fbwisher/__main__.py
+fbwisher.egg-info/PKG-INFO
+fbwisher.egg-info/SOURCES.txt
+fbwisher.egg-info/dependency_links.txt
+fbwisher.egg-info/entry_points.txt
+fbwisher.egg-info/requires.txt
+fbwisher.egg-info/top_level.txt
