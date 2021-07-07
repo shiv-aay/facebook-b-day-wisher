@@ -9,8 +9,6 @@ from time import sleep
 import os
 import chromedriver_autoinstaller
 
-chromedriver_autoinstaller.install()
-
 # Install your browser's driver and put its path in the following line.
 driver_address = r"C:\Users\pc\Desktop\chromedriver.exe"
 # Here I've used Chrome Browser which is Chromium based.
@@ -23,7 +21,7 @@ def start(username , password , send_now):
     chrome_options.add_argument("--disable-notifications")
     # Use following line if you have already have chromedriver and linked it at the top
     # driver=webdriver.Chrome(driver_address , options=chrome_options) # put the path of your driver in the double quotes
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome(options=chrome_options)
 
     driver.get('https://facebook.com/')
     driver.maximize_window()
@@ -37,7 +35,7 @@ def start(username , password , send_now):
     log_in = driver.find_element_by_xpath("//button[@type='submit']")
     log_in.click()
     ## Logged in
-    sleep(2)
+    sleep(1)
     ## Going to Birthday's Page
     driver.get('https://facebook.com/events/birthdays/')
     WebDriverWait(driver,100).until(EC.presence_of_element_located((By.CSS_SELECTOR, "._5rpu")))
@@ -77,9 +75,15 @@ if os.path.exists("credentials.txt"):
     password = lines[2].rstrip()
     start(username = username , password = password , send_now = send_now)
 else:
+    print("Hi there! Welcome to Facebook Birthday Post Automation Script. Let's get started by setting up your chrome driver...\n")
+    chromedriver_autoinstaller.install()
+    print("Chrome Driver Set. \n\nGet your seat belts on and be ready for a quick ride. \nBut first, let's answer some difficult questions\n")
+
+    print("# NOTE : The following questions will be asked, only the first time you use this script on your device")
+    print("If you want to reset this information, delete `credentials.txt` file inside the folder. And needless to say, don't worry about your privacy. This is a completely safe and open-souce script. \nCheers!\n")    
     username = input("Enter your facebook email/phone number : ")
     send_now = input("Do you want to post wishes instantaneously ? ")
-    password = getpass()
+    password = getpass("Enter your facebook password (unechoed) : ")
     file = open("credentials.txt","a")
     lines = [username, send_now, password]
     for line in lines:
