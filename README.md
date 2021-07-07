@@ -1,16 +1,23 @@
 # Automated Facebook Birthday Wish
 This is a simple python script which automatically sends personalized birthday wishes to all your Facebook friends who have birthdays at that day on their timeline.
 
+NOTE : This script is originally built for Chrome browser on windows OS. With slight modifications, it can be easily used on different browsers or OS.
+
 Clone this repo using 
 ```
 git clone https://github.com/shiv-aay/facebook-b-day-wisher
 ```
+Go to that directory
+```
+cd facebook-b-day-wisher
+```
+
 ## Dependencies
 
 This script requires python3 and selenium installed. Download any version of python3 from <a href="https://www.python.org/downloads/">here.</a> For selenium with python installed just run the following code in powershell or in terminal:
 
 ```
-pip install requirements
+pip install -r requirements.txt
 ```
 
 ## Setup
