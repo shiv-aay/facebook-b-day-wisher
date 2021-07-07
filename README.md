@@ -20,11 +20,12 @@ This script requires python3 and selenium installed. Download any version of pyt
 pip install -r requirements.txt
 ```
 
-## Setup
+## Setup for other broswers
 
-<i>Note:To use it with firefox change ```driver=webdriver.Edge()``` in line 11 to  ```driver=webdriver.Firefox()``` Then you should download the geckodriver from <a href="https://github.com/mozilla/geckodriver/releases">here.</a>
+<i>Note:To use it with firefox use ```driver=webdriver.Firefox()``` Then you should download the geckodriver from <a href="https://github.com/mozilla/geckodriver/releases">here.</a>
  Further instructions are given in the script itself as comments
  </i>
+Similar instructions to be followed for Edge.
 
 ## Run
 
