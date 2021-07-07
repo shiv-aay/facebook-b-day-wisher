@@ -7,6 +7,11 @@ Clone this repo using
 ```
 git clone https://github.com/shiv-aay/facebook-b-day-wisher
 ```
+Go to that directory
+```
+cd facebook-b-day-wisher
+```
+
 ## Dependencies
 
 This script requires python3 and selenium installed. Download any version of python3 from <a href="https://www.python.org/downloads/">here.</a> For selenium with python installed just run the following code in powershell or in terminal:
