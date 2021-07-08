@@ -17,16 +17,9 @@ Cheers!
 
 ![facebook_wall](/images/fbwisher_wall.png "facebook_wall")
 
-**Alternatively**
+## **Alternatively**
 
-Clone this repo using 
-```
-git clone https://github.com/shiv-aay/facebook-b-day-wisher
-```
-Go to that directory
-```
-cd facebook-b-day-wisher
-```
+You can use <a href="https://github.com/shiv-aay/facebook-b-day-wisher/blob/main/facebook_automatic_birthday_wish_old_script.py">this script</a>.
 
 ## Dependencies
 
@@ -45,7 +38,7 @@ Similar instructions to be followed for Edge.
 
 ## Run
 
-Just run the script using python in powershell or in terminal like:
+Just run the script using python in powershell or in terminal like this:
 
 ```
 python facebook_automatic_birthday_wish.py
