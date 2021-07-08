@@ -38,11 +38,8 @@ Similar instructions to be followed for Edge.
 
 ## Run
 
-Just run the script using python in powershell or in terminal like this:
+Just run the script using python in powershell or in terminal.
 
-```
-python facebook_automatic_birthday_wish.py
-```
 Enter login credentials, password(unechoed) once
 
-In case, you want to reset your credentials or choices, just delete `credentials.txt` file inside the cloned folder.
+In case, you want to reset your credentials or choices, just delete `credentials.txt` file inside the folder.
