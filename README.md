@@ -11,6 +11,12 @@ Run the script by typing `fbwisher` in the terminal.
 
 Cheers!
 
+## Screenshots
+
+![installation](/images/fbwisher_terminal.png "installation")
+
+![facebook_wall](/images/fbwisher_wall.png "facebook_wall")
+
 **Alternatively**
 
 Clone this repo using 
